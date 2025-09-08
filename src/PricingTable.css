@@ -1,0 +1,160 @@
+/* 🌞 Light Mode (default) */
+.pricing-container {
+  background-image: linear-gradient(to bottom right, #eff6ff, #c7d2fe);
+  padding: 4rem 1.5rem;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Title */
+.pricing-title {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+  font-weight: 800;
+  color: #4338ca;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+/* Grid Layout */
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.5rem;
+  max-width: 72rem;
+  width: 100%;
+}
+
+/* Pricing Card */
+.pricing-card {
+  position: relative;
+  background-color: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+              0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  padding: 2rem;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.pricing-card:hover {
+  transform: scale(1.05);
+}
+
+.pricing-card.popular {
+  border: 4px solid #6366f1;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+              0 8px 10px -6px rgba(0, 0, 0, 0.1);
+}
+
+/* Badge */
+.badge {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background-color: #6366f1;
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  text-transform: uppercase;
+}
+
+/* Plan Name */
+.plan-name {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 1rem;
+}
+
+/* Price */
+.plan-price {
+  font-size: 1.875rem;
+  font-weight: 800;
+  color: #4f46e5;
+  margin-bottom: 1.5rem;
+}
+
+/* Features */
+.feature-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.feature-item {
+  color: #4b5563;
+  display: flex;
+  align-items: center;
+}
+
+/* CTA Buttons */
+.cta-btn {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.cta-btn.primary {
+  background-color: #4f46e5;
+  color: #fff;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+              0 2px 4px -2px rgba(0, 0, 0, 0.1);
+}
+
+.cta-btn.primary:hover {
+  background-color: #4338ca;
+}
+
+.cta-btn.secondary {
+  background-color: #e5e7eb;
+  color: #284977;
+}
+
+.cta-btn.secondary:hover {
+  background-color: #d1d5db;
+}
+
+/* 🌙 Dark Mode */
+.dark-mode .pricing-container {
+  background-image: linear-gradient(to bottom right, #1e1e2f, #2d2d44);
+}
+
+.dark-mode .pricing-title {
+  color: #ffffff;
+}
+
+.dark-mode .pricing-card {
+  background-color: #2a2a3d;
+  box-shadow: 0 10px 15px -3px rgba(0,0,0,0.6),
+              0 4px 6px -2px rgba(0,0,0,0.5);
+}
+
+.dark-mode .plan-name {
+  color: #f3f4f6;
+}
+
+.dark-mode .plan-price {
+  color: #ffffff;
+}
+
+.dark-mode .feature-item {
+  color: #ffffff;
+}
+
+.dark-mode .cta-btn.secondary {
+  background-color: #114e54;
+  color: #44864b;
+}
+
+.dark-mode .cta-btn.secondary:hover {
+  background-color: #3b1e1e;
+}
